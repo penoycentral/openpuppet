@@ -1,6 +1,6 @@
 Puppet Module
 
-Module Layout
+####Module Layout
 
 ```
 ├── facts.d
@@ -20,10 +20,10 @@ facts.d — Contains external facts, which are an alternative to Ruby-based cust
 templates — Contains templates, which the module’s manifests can use.
 tests — Contains examples showing how to declare the module’s classes and defined types.
 
-Writing module
+####Generate module template
 $puppet module generate username-modulename
 
-Module Tool
+####Module Tool
 ```
 puppet module install puppetlabs-apache --versio  0.0.2
 puppet module list
@@ -32,7 +32,7 @@ puppet module uninstall
 puppet module upgrade
 puppet module generate
 ```
-To publish Module
+####To publish Module
 ```
 1. Create a Puppet Forge account, if you don’t already have one.
 2. Prepare your module.
@@ -49,7 +49,7 @@ Note:
 - remove symlink
 ```
 
-Build Module
+####Build Module
 ```
 #puppet module build <Module Directory>
 ```
