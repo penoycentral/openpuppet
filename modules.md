@@ -2,14 +2,15 @@ Puppet Module
 
 Module Layout
 
-Module-name
-manifests
-files
-templates
-lib
-facts.d
-tests
-spec
+```
+├── facts.d
+├── files
+├── lib
+├── manifests
+├── spec
+├── templates
+└── tests
+```
 
 where:
 manifest: Contains all of the manifests in the module
@@ -23,25 +24,32 @@ Writing module
 $puppet module generate username-modulename
 
 Module Tool
+```
 puppet module install puppetlabs-apache --versio  0.0.2
 puppet module list
 puppet module search
 puppet module uninstall
 puppet module upgrade
 puppet module generate
-
+```
 To publish Module
+```
 1. Create a Puppet Forge account, if you don’t already have one.
 2. Prepare your module.
 3. Write a metadata.json file with the required metadata.
 4. Build an uploadable tarball of your module.
 5. Upload your module using the Puppet Forge’s web interface.
+```
 
 Note:
+```
 - Module name should be username-modulename Be sure to use this long name in your module’s metadata.json file
 - its web interface presents them as username/module
 - set files to be ignored. Include them in .gitgnore .pmtignore
 - remove symlink
+```
 
 Build Module
+```
 #puppet module build <Module Directory>
+```
