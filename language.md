@@ -15,3 +15,4 @@ https://docs.puppetlabs.com/guides/style_guide.html
 -Symbolic links must be declared with an ensure value of ensure => link and explicitly specify a value for the target attribute.
 -POSIX numeric notation must be represented as 4 digits.
 -POSIX symbolic notation must be a string.
+```
