@@ -59,3 +59,12 @@ Interface to PE Orchestation Engine ie. Mcollective
 
 ###Events
 Current State of the Infrastructure
+
+Type of Events
+```
+Change 
+Failure
+Noop
+Skip
+``` 
+
